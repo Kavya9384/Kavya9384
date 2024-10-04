@@ -1,12 +1,39 @@
-- 👋 Hi, I’m @Kavya9384
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+import random
 
-<!---
-Kavya9384/Kavya9384 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+ 
+
+options = ["Rock", "Paper", "Scissors"]
+
+ 
+
+user_choice = input("Choose Rock, Paper, or Scissors: ")
+
+computer_choice = random.choice(options)
+
+ 
+
+print("You chose: ", user_choice)
+
+print("Computer chose: ", computer_choice)
+
+ 
+
+if user_choice == computer_choice:
+
+    print("It's a tie!")
+
+elif user_choice == "Rock" and computer_choice == "Scissors":
+
+    print("You win!")
+
+elif user_choice == "Paper" and computer_choice == "Rock":
+
+    print("You win!")
+
+elif user_choice == "Scissors" and computer_choice == "Paper":
+
+    print("You win!")
+
+else:
+
+    print("Computer wins!")
